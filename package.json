@@ -9,12 +9,15 @@
     "node": ">=0.4.7"
   },
   "dependencies": {
-    "express":"",
-    "mustache":""
+    "express": "",
+    "mustache": "",
+    "snyk": "^1.19.1"
   },
-  "devDependencies": {
-  },
+  "devDependencies": {},
   "scripts": {
-    "test": "make test"
-  }
+    "test": "make test",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
